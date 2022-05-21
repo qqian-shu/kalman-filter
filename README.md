@@ -1,1 +1,3 @@
 # kalman-filter
+
+The flow of the Kalman filter based method for processing small samples of data with noise is shown below. Firstly, the original data is processed and a linear model is fitted to the data to obtain the preliminary linear model parameters. Secondly, based on the linear model parameters, the system state transfer matrix and the system state control matrix in the Kalman model are established. Then the system model is built based on the obtained system state transfer matrix and system state control matrix, and the original data is corrected by combining the results derived from the system model with the observed data. Finally, subsequent downstream tasks are carried out based on the corrected data.
